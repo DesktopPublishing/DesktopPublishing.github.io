@@ -103,10 +103,17 @@
         z-index: 99;
         background-color: rgba(255,255,255, 0.7);
       }
-      .page-header{
-        width: 100%;
+      .header{
+        position:fixed;
+         top: 0px;
+         right: 0px;
+         left:0px;
+         height:70px;
+         width:100%;
+         background-color: rgba(255,255,255,0.1);
+         color: #fff;
         text-align: center;
-        margin-left: 0px;
+        z-index: 1;
       }
       @font-face
       {
@@ -115,6 +122,7 @@
       }
   </style>
   <body oncontextmenu="return(false);">
+  <div class="header"></div>
     <section class="color-7">
             <nav class="cl-effect-21">
               <a style="color:#0038A8" href="index.html">Home</a>
@@ -127,7 +135,7 @@
 
   <div style="z-index:2;position:fixed;width:100%;" class="well-lg">
     <div class="page-header">
-      <h1 style="font-family:knockout;font-size:60px">disenyo</h1>
+      <h1 style="font-family:knockout;font-size:60px;position:fixed;top:30px;left:0px;right:0px;text-align:center">disenyo</h1>
     </div>
   </div>
 
