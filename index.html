@@ -114,6 +114,17 @@
       }
   </style>
   <body oncontextmenu="return(false);">
+  <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div style="height:500px" class="modal-body">
+              <embed style="position:fixed;left:0px; bottom:0px; right:0px; width:100%; height:100%; margin:auto; padding:10px;" src="sample.swf"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
   <div class="header"></div>
         <section class="color-7">
             <nav class="cl-effect-21">
@@ -128,7 +139,16 @@
     <div class="page-header">
       <img style="position:fixed;top:80px;left:0px;right:0px;display: block;margin-left: auto;margin-right: auto;" width="150px" height="50px" src="about/img/disenyo_logo.png"></img>
     </div>
-      <div class="this"><embed style="position:fixed; top:100px; left:0px; bottom:0px; right:0px; width:50%; height:50%; margin:auto; padding:0;" src="sample.swf"/></div>
+      
+      <div align="center">
+      <div style="margin-top:100px;width:50%; text-align:left" class="well well-sm">
+        <p>Hello there!</p> <p>We are team disenyo, a community of artists dedicated to bring inspiration and ideas to art lovers like us.</p>
+
+<p style="text-align:justify">If you're an art enthusiast,then this is the perfect place to visit. Also, the new Disenyo magazine is out now. Our latest issue features homegrown talents making their names in Hollywood, different art schools, innovation of arts here in the Philippines, cartoon and animation, and so much more.</p>
+        
+      </div>
+      <button id="modal" rel="popover" data-placement="bottom" data-content="Click me to see how amazing R43 is!. :)" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Magazine</button>
+      </div>
   </div>
   <iframe oncontextmenu="return(false);" src="slide/index.html" frameBorder="0" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0;overflow:hidden">Browser not compatible.</iframe>
 
@@ -140,11 +160,19 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/toastr.js"></script>
+    <script src="js/tooltip.js"></script>
+  <script src="js/popover.js"></script>
     <script type="text/javascript">
       window.onload = function() {
         toastr.options.positionClass = 'toast-top-center'
           toastr.info('Welcome to disenyo')
         };
+</script>
+  <script type="text/javascript">
+        $(function ()
+        {
+         $("#modal").popover('show');
+        });
     </script>
   </body>
 </html>
