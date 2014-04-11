@@ -112,8 +112,23 @@
       font-family: knockout;
       src: url("dist/Knockout-HTF47-Bantamweight.otf") format("opentype");
       }
+      .well{
+        background-color: rgba(0,0,0, 0.7);
+        color: #fff;
+        border:none;
+        font-family: asdasdasd;
+      }
+      .modal-content{
+        width:1200px;
+        margin-left: -300px;
+      }
+       @font-face
+      {
+      font-family: Gotham;
+      src: url("FONTS/Gotham-Book.otf") format("opentype");
+      }
   </style>
-  <body oncontextmenu="return(false);">
+  <body oncontextmenu="return();">
   <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -141,10 +156,10 @@
     </div>
       
       <div align="center">
-      <div style="margin-top:180px;width:50%; text-align:left" class="well well-sm">
-        <p>Hello there!</p> <p>We are team disenyo, a community of artists dedicated to bring inspiration and ideas to art lovers like us.</p>
+      <div style="margin-top:230px;width:50%; text-align:left;font-family:Gotham;" class="well well-sm">
+        <p>Hello there!</p> <p>We are team <span style="font-family:knockout;font-size:30px">disenyo</span>, a community of artists dedicated to bring inspiration and ideas to art lovers like us.</p>
 
-<p style="text-align:justify">If you're an art enthusiast,then this is the perfect place to visit. Also, the new Disenyo magazine is out now. Our latest issue features homegrown talents making their names in Hollywood, different art schools, innovation of arts here in the Philippines, cartoon and animation, and so much more.</p>
+<p style="text-align:justify">If you're an art enthusiast,then this is the perfect place to visit. Also, the new <span style="font-family:knockout;font-size:30px">disenyo</span> magazine is out now. Our latest issue features homegrown talents making their names in Hollywood, different art schools, innovation of arts here in the Philippines, cartoon and animation, and so much more.</p>
         
       </div>
       <button id="modal" rel="popover" data-placement="bottom" data-content="Click me to see how amazing R43 is!. :)" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Magazine</button>
