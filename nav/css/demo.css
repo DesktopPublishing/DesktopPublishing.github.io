@@ -120,7 +120,7 @@
 .color-7 {
 	position: fixed;
 	height: 50px;
-	text-align: center;
+	text-align: right;
 	z-index: 999;
 	margin: 0 auto;
 	width: 100%;
